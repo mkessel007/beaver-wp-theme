@@ -1,0 +1,162 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+// variables
+@padding-g-1: 0.6rem;
+@padding-g-2: 1.5rem;
+@padding-h-1: 0 1rem;
+
+/* XSmall devices (mobile, max up to 544px) */
+@media (max-width: 544px) {
+	.xxs-clearfix{clear: both;}
+	.xxs-pull-none{float: none !important;}
+
+	// Menu
+	.navbar-nav{
+		.nav-item{
+			float: none;
+		}
+	}
+
+	.navbar-nav .nav-item+.nav-item{margin: 0;}
+}
+/* Small devices (mobile, max up to 767px) */
+@media (max-width: @screen-xs-max) {
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	.navbar-topbar{
+		//position: relative;
+
+		#collapsingNavbar{
+		   margin: 0;
+		   position: absolute;               
+		   top: 50%;   
+		   right: 0;                      
+		   transform: translate(0, -50%);
+		   padding: @padding-h-1;
+		}   
+	}
+}
+
+.navbar-topbar{
+	background: rgba(0, 0, 0, 0.7);
+	padding: @padding-g-2;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {}
+
+// Site Logo
+.site-logo{
+	max-width: 18rem;
+	max-height: 7rem;
+
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+.site-title{
+	a{
+		color: @white;
+		font-size: @font-size-h2;
+	}
+}
+
+.site-description{
+	padding: @padding-g-1;
+}
+
+/*
+
+/* CUSTOM ELEMENTS */
+.feature-box{
+	background: rgba(0, 0, 0, 0.5);
+	color: @white;
+	position: relative;
+	border-radius: 0.2rem;
+
+	&:after{
+		content: "";
+		margin: 0 auto;
+		width: 10rem;
+		height: 0.2rem;
+		background: @red;
+		bottom: 0;
+	}
+}
+
+//  ===================================
+//  THEME STYLES
+//  =================================== 
+a{
+	color: @red;
+
+	&:hover{
+		color: @dark-gray;
+	}
+}
+
+.banner{
+	background: @black;
+
+	.super-hero-image{
+		opacity: 0.5;
+	}
+	
+	.fl-rich-text > p{
+		margin: 0;
+	}
+
+	.caption-1{
+		text-shadow: .3rem .3rem .2rem @black;
+		margin-bottom: 1rem;
+		font-weight: 600;
+		// span{
+		// 	background: rgba(0, 0, 0, 0.3);
+		// 	display: inline-block;
+		// 	padding: .5rem;
+		// }
+		// padding: 1.5rem 1.5rem 0 1.5rem;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -0.3rem;
+			left: 50%;
+			margin-left: -5rem;
+			background: @red;
+			width: 10rem;
+			height: 0.3rem;
+		}
+	}
+
+	.caption-2{
+		text-shadow: .2rem .2rem .1rem @black;
+		// padding: 0 1.5rem 1.5rem 1.5rem;
+		
+
+		// &:after{
+		// 	content: '';
+		// 	display: block;
+		// 	position: absolute;
+		// 	bottom: -0.3rem;
+		// 	left: 50%;
+		// 	margin-left: -5rem;
+		// 	background: @red;
+		// 	width: 10rem;
+		// 	height: 0.3rem;
+		// }
+	}
+}
+
+.shs-theme{
+	margin-bottom: 0;
+}

@@ -1,0 +1,18 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* HELPERS */
+.xs-not-pull-right {
+  float: inherit !important; }
+
+/* Small devices (mobile, max up to 767px) */
+@media (max-width: #screen-xs-max) {
+  .xs-clearfix {
+    clear: both; }
+
+  .collapse {
+    background: red; } }
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/*# sourceMappingURL=custom.css.map */

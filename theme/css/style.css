@@ -1,0 +1,269 @@
+/* Theme Colors */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* XSmall devices (mobile, max up to 544px) */
+@media (max-width: 544px) {
+  .xxs-clearfix {
+    clear: both;
+  }
+  .xxs-pull-none {
+    float: none !important;
+  }
+  .navbar-nav .nav-item {
+    float: none;
+  }
+  .navbar-nav .nav-item + .nav-item {
+    margin: 0;
+  }
+}
+/* Small devices (mobile, max up to 767px) */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-topbar #collapsingNavbar {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 0 1rem;
+  }
+}
+.navbar-topbar {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+.site-logo {
+  max-width: 18rem;
+  max-height: 7rem;
+}
+.site-logo img {
+  max-width: 100%;
+  height: auto;
+}
+.site-title a {
+  color: #ffffff;
+  font-size: 30px;
+}
+.site-description {
+  padding: 0.6rem;
+}
+/*
+
+/* CUSTOM ELEMENTS */
+.feature-box {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  position: relative;
+  border-radius: 0.2rem;
+}
+.feature-box:after {
+  content: "";
+  margin: 0 auto;
+  width: 10rem;
+  height: 0.2rem;
+  background: #e00000;
+  bottom: 0;
+}
+a {
+  color: #e00000;
+}
+a:hover {
+  color: #333333;
+}
+.banner {
+  background: #000000;
+}
+.banner .super-hero-image {
+  opacity: 0.5;
+}
+.banner .fl-rich-text > p {
+  margin: 0;
+}
+.banner .caption-1 {
+  text-shadow: 0.3rem 0.3rem 0.2rem #000000;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.banner .caption-1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  margin-left: -5rem;
+  background: #e00000;
+  width: 10rem;
+  height: 0.3rem;
+}
+.banner .caption-2 {
+  text-shadow: 0.2rem 0.2rem 0.1rem #000000;
+}
+.shs-theme {
+  margin-bottom: 0;
+}
+/*
+Max content widths
+*/
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+/*
+Navbar as top bar
+*/
+.navbar-topbar {
+  border-radius: 0;
+}
+/*
+Header logo
+If you require a Site title and a logo, an example of how to do this is provided below (use your own logo):
+
+#site-title a {
+  display: inline-block;
+	padding-left 60px;
+  background: url('../../img/logo.png') 0 0 no-repeat;
+}
+*/
+/*
+Main content
+*/
+#content article {
+  margin-bottom: 40px;
+}
+#content header {
+  margin: 20px 0;
+}
+#content section {
+  margin-bottom: 20px;
+}
+#content footer {
+  padding-bottom: 20px;
+}
+/*
+Sidebar
+*/
+.sidebar {
+  margin-top: 20px;
+}
+.sidebar section {
+  margin-bottom: 40px;
+}
+.sidebar ul,
+.sidebar ol {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar li {
+  margin: 10px 0;
+}
+/*
+Hide form placeholders on focus
+*/
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* FF 19+ */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+/* FF 4-18 */
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+/* FF 19+ */
+/*
+Comments
+*/
+#respond {
+  margin-top: 40px;
+}
+ol.commentlist {
+  counter-reset: li;
+  /* Initiate a counter */
+  padding: 0;
+}
+ol.commentlist ul {
+  padding: 0;
+}
+ol.commentlist > li {
+  position: relative;
+  margin: 0 0 20px 0;
+  list-style: none /* Disable the normal item numbering */;
+}
+ol.commentlist > li:before {
+  content: "Thread " counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom-left-radius: 4px;
+  padding: 5px 20px 5px 10px;
+  color: #999999;
+}
+ol.commentlist li ol,
+ol.commentlist li ul {
+  list-style-type: none;
+  margin: 0;
+}
+.commentlist li li {
+  background: #f9f9f9;
+}
+.commentlist li li li {
+  background: #ffffff;
+}
+.commentlist li li li li {
+  background: #f9f9f9;
+}
+.commentlist li li li li li li {
+  background: #ffffff;
+}
+.commentlist li {
+  padding: 20px;
+}
+.commentlist ul li {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.reply p {
+  margin: 0;
+}
+/*
+Site footer
+*/
+.site-footer {
+  padding: 40px 0;
+}
+.site-footer ul,
+.site-footer ol {
+  list-style-type: none;
+  padding: 0;
+}
+.site-footer li {
+  margin: 10px 0;
+}
+.site-sub-footer p {
+  text-align: center;
+}
+.site-footer p {
+  text-align: center;
+}
